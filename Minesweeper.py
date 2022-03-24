@@ -1,6 +1,6 @@
 from random import randint
 import colorama
-from colorama import Fore, Back, Style
+from colorama import Fore, Back  # Style not used
 colorama.init(autoreset=True)
 
 
@@ -12,7 +12,8 @@ class Game:
         self.GameWin = None  # Used to determine whether game is over
 
     def Select(self, r, c):
-        if r < 0 or r >= len(self.board.board) or c < 0 or c >= len(self.board.board):
+        if (r < 0 or r >= len(self.board.board) or c < 0
+                or c >= len(self.board.board)):
             return None
         # When player makes a selection, need to check if it's
         # the first move made as the board is setup after the
