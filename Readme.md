@@ -1,3 +1,4 @@
+![Tests](https://github.com/RyMaDe/Command-Line-Minesweeper/actions/workflows/tests.yml/badge.svg)
 # Command Line Minesweeper
 A basic minesweeper game played on command line prompt.
 
